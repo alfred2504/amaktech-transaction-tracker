@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.04066089.css",
-    "main.js": "/static/js/main.174e9dc2.js",
-    "static/js/488.a8fd5f74.chunk.js": "/static/js/488.a8fd5f74.chunk.js",
-    "index.html": "/index.html",
-    "main.04066089.css.map": "/static/css/main.04066089.css.map",
-    "main.174e9dc2.js.map": "/static/js/main.174e9dc2.js.map",
-    "488.a8fd5f74.chunk.js.map": "/static/js/488.a8fd5f74.chunk.js.map"
+    "main.css": "/amaktech-transaction-tracker1/static/css/main.04066089.css",
+    "main.js": "/amaktech-transaction-tracker1/static/js/main.709c2ae0.js",
+    "static/js/488.a8fd5f74.chunk.js": "/amaktech-transaction-tracker1/static/js/488.a8fd5f74.chunk.js",
+    "index.html": "/amaktech-transaction-tracker1/index.html",
+    "main.04066089.css.map": "/amaktech-transaction-tracker1/static/css/main.04066089.css.map",
+    "main.709c2ae0.js.map": "/amaktech-transaction-tracker1/static/js/main.709c2ae0.js.map",
+    "488.a8fd5f74.chunk.js.map": "/amaktech-transaction-tracker1/static/js/488.a8fd5f74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04066089.css",
-    "static/js/main.174e9dc2.js"
+    "static/js/main.709c2ae0.js"
   ]
 }
