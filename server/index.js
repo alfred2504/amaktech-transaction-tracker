@@ -15,7 +15,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '#Alfred2504',
-  database: 'amaktech_transaction_tracker',
+  database: 'amaktech-transaction-tracker', // Updated database name
 });
 
 db.connect(err => {
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to AmakTech Transaction Tracker API');
 });
 
-// Create a new user (registration)
+// Create a new user
 app.post('/register', (req, res) => {
   const { name, email, password } = req.body;
   const query = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
@@ -43,19 +43,14 @@ app.post('/register', (req, res) => {
   });
 });
 
-// User login
-app.post('/login', (req, res) => {
-  const { email, password } = req.body;
-  const query = 'SELECT * FROM users WHERE email = ? AND password = ?';
-  db.execute(query, [email, password], (err, results) => {
+// Get all users
+app.get('/users', (req, res) => {
+  const query = 'SELECT * FROM users';
+  db.execute(query, (err, results) => {
     if (err) {
       return res.status(500).send(err);
     }
-    if (results.length > 0) {
-      res.status(200).send(results[0]);
-    } else {
-      res.status(401).send({ message: 'Invalid credentials' });
-    }
+    res.send(results);
   });
 });
 
